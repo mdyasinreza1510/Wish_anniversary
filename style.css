@@ -1,0 +1,99 @@
+body{
+    background-image: url("heart.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+  
+
+}
+.blurbg{
+     height: 100vh;
+     width: 100%;
+     position: fixed;
+    inset: 0; /*element ko charo taraf se stretch kar do (top, right, bottom, left = 0)
+    yani wo apne parent (ya screen) ko poora cover karega*/
+    backdrop-filter: blur(1.5px);
+    z-index: -1;
+}
+.main_box {
+
+
+    height: 600px;
+    width: 500px;
+    margin-top: 100px;
+    padding: 10px;
+    
+}
+.annimsg{
+   
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color:  #EAD196;
+    font-size:19px;
+    font-weight:900;
+    font-family: "Petit Formal Script", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    text-align:center
+}
+.annimsg p{
+ transform: scaleY(2);   
+}
+
+
+.mainmsg{
+    color: #EAD196;
+    font-weight: 700;
+    box-sizing: border-box; /* size of a div wll not increaese if the padding is added;*/
+    padding: 0px 9px 5px 9px;
+    border-radius: 20px;
+    border: 2px solid #F9F8F6;
+    font-family: "Playwrite IE", cursive;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 75%;
+    overflow:auto; /*the text will not go outside the div*/
+   
+}
+
+.mainmsg p{
+   animation: fadein 4s ease ;
+}
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to {
+      
+        opacity: 1; }
+}
+
+.fstbtn{
+    
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+   
+     
+}
+#frstbtn{
+
+    background-color: #EAD196;
+    font-weight:900 ;
+    font-family: "Petit Formal Script", cursive;
+    border: none;
+    width: 50%;
+    border-radius: 30px;
+}
+a{  
+   
+    text-decoration: none; 
+     color: #7D0A0A;
+}
+
